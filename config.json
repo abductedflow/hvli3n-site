@@ -27,7 +27,28 @@
       "kicker": "listen",
       "title": "Selected transmissions",
       "body": "Minimal index. Long-form pieces preferred.",
-      "links": []
+      "links": [
+        {
+          "label": "YouTube",
+          "href": "https://youtube.com/@hvli3n",
+          "external": true
+        },
+        {
+          "label": "Instagram",
+          "href": "https://www.instagram.com/hvli3n",
+          "external": true
+        },
+        {
+          "label": "TikTok",
+          "href": "https://www.tiktok.com/@hvli3nsarereal",
+          "external": true
+        },
+        {
+          "label": "SoundCloud",
+          "href": "https://soundcloud.com/hvli3n",
+          "external": true
+        }
+      ]
     },
     {
       "kicker": "field",

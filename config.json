@@ -6,9 +6,21 @@
   "heroLine": "Not a set. A field.",
   "heroSub": "Improvised transmission with evolving systems. Desert → film → gorge.",
   "nav": [
-    { "label": "Listen", "href": "#listen", "external": false },
-    { "label": "Field", "href": "#field", "external": false },
-    { "label": "Wardrobe", "href": "#wardrobe", "external": false }
+    {
+      "label": "CONTACT RECORDZ",
+      "href": "https://contactrecordz.com",
+      "external": true
+    },
+    {
+      "label": "K3TABYT3",
+      "href": "https://k3tabyt3.com",
+      "external": true
+    },
+    {
+      "label": "D3ADLI3N",
+      "href": "https://d3adli3n.com",
+      "external": true
+    }
   ],
   "sections": [
     {
@@ -22,7 +34,11 @@
       "title": "Contact Field",
       "body": "A responsive sonic ecology. No loops. No spine. Everything listens.",
       "links": [
-        { "label": "contactrecordz.com", "href": "https://contactrecordz.com", "external": true }
+        {
+          "label": "contactrecordz.com",
+          "href": "https://contactrecordz.com",
+          "external": true
+        }
       ]
     },
     {
@@ -30,7 +46,11 @@
       "title": "Interface garments",
       "body": "Hand-built artifacts from the K3TABYT3 atelier.",
       "links": [
-        { "label": "k3tabyt3.com", "href": "https://k3tabyt3.com", "external": true }
+        {
+          "label": "k3tabyt3.com",
+          "href": "https://k3tabyt3.com",
+          "external": true
+        }
       ]
     }
   ],

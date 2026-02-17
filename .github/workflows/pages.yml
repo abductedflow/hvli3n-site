@@ -57,13 +57,15 @@ jobs:
           title = cfg.get("metaTitle") or cfg.get("wordmark") or "Site"
           desc = cfg.get("metaDescription") or "Signal node."
           domain = cname_path.read_text(encoding="utf-8").strip()
-          url = f"https://{domain}/" if domain else ""
+          canonical_domain = "www.hvli3n.com" if domain == "hvli3n.com" else domain
+          url = f"https://{canonical_domain}/" if canonical_domain else ""
+          image_url = f"https://{canonical_domain}/assets/og-share.png" if canonical_domain else "/assets/og-share.png"
 
           content = index_path.read_text(encoding="utf-8")
 
           def upsert_meta(doc, attr, key, value):
               escaped = html.escape(value, quote=True)
-              pat = rf'<meta\\s+{attr}="{re.escape(key)}"\\s+content="[^"]*"\\s*/?>'
+              pat = rf'<meta\s+{attr}="{re.escape(key)}"\s+content="[^"]*"\s*/?>'
               repl = f'<meta {attr}="{key}" content="{escaped}" />'
               if re.search(pat, doc):
                   return re.sub(pat, repl, doc, count=1)
@@ -73,8 +75,11 @@ jobs:
           content = upsert_meta(content, "name", "description", desc)
           content = upsert_meta(content, "property", "og:title", title)
           content = upsert_meta(content, "property", "og:description", desc)
+          content = upsert_meta(content, "property", "og:image", image_url)
+          content = upsert_meta(content, "property", "og:image:type", "image/png")
           content = upsert_meta(content, "name", "twitter:title", title)
           content = upsert_meta(content, "name", "twitter:description", desc)
+          content = upsert_meta(content, "name", "twitter:image", image_url)
           if url:
               content = upsert_meta(content, "property", "og:url", url)
 
@@ -85,6 +90,7 @@ jobs:
           test -f dist/assets/style.css
           test -f dist/assets/site.js
           test -f dist/assets/og-share.svg
+          test -f dist/assets/og-share.png
           test -f dist/config.json
           test -f dist/CNAME
 

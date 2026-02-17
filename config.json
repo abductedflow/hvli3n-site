@@ -1,0 +1,39 @@
+{
+  "metaTitle": "HVLI3N",
+  "metaDescription": "Haley + alien. Vocal transmission evolving into producer architecture.",
+  "wordmark": "HVLI3N",
+  "tagline": "Haley + alien. Vocal transmission → producer architecture.",
+  "heroLine": "Not a set. A field.",
+  "heroSub": "Improvised transmission with evolving systems. Desert → film → gorge.",
+  "nav": [
+    { "label": "Listen", "href": "#listen", "external": false },
+    { "label": "Field", "href": "#field", "external": false },
+    { "label": "Wardrobe", "href": "#wardrobe", "external": false }
+  ],
+  "sections": [
+    {
+      "kicker": "listen",
+      "title": "Selected transmissions",
+      "body": "Minimal index. Long-form pieces preferred.",
+      "links": []
+    },
+    {
+      "kicker": "field",
+      "title": "Contact Field",
+      "body": "A responsive sonic ecology. No loops. No spine. Everything listens.",
+      "links": [
+        { "label": "contactrecordz.com", "href": "https://contactrecordz.com", "external": true }
+      ]
+    },
+    {
+      "kicker": "wardrobe",
+      "title": "Interface garments",
+      "body": "Hand-built artifacts from the K3TABYT3 atelier.",
+      "links": [
+        { "label": "k3tabyt3.com", "href": "https://k3tabyt3.com", "external": true }
+      ]
+    }
+  ],
+  "footerLeft": "HVLI3N",
+  "footerRight": "field presence"
+}
